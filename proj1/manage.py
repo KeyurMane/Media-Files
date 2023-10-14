@@ -17,6 +17,12 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+def display(self):
+    try:
+        print('hello', os.curdir)
+    except Exception as e:
+        print('exception occur',e)
+
 
 if __name__ == '__main__':
     main()
